@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">main</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">APL table</string>
+    <string name="title_scorers">APL scorers</string>
+    <string name="title_world">World cup champions</string>
+</resources>

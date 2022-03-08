@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scorers_number">№</string>
+    <string name="scorers_name">Scorer</string>
+    <string name="scorers_team">Team</string>
+    <string name="scorers_goals">G</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="team_number">№</string>
+    <string name="team_name">Team</string>
+    <string name="team_matches">M</string>
+    <string name="team_points">P</string>
+</resources>

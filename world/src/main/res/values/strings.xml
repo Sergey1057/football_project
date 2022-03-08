@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="world_number">№</string>
+    <string name="world_date">Date</string>
+    <string name="world_name">Champion</string>
+</resources>

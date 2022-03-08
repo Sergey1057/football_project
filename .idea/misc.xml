@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/less/football/app/src/main/res/layout/activity_main.xml" value="0.2617753623188406" />
+        <entry key="..\:/Projects/less/football/home/src/main/res/layout/fragment_home.xml" value="0.2617753623188406" />
+        <entry key="..\:/Projects/less/football/home/src/main/res/layout/main_cell_layout.xml" value="0.2617753623188406" />
+        <entry key="..\:/Projects/less/football/main/src/main/res/layout/activity_main.xml" value="0.2617753623188406" />
+        <entry key="..\:/Projects/less/football/main/src/main/res/menu/menu.xml" value="0.26614583333333336" />
+        <entry key="..\:/Projects/less/football/scorers/src/main/res/layout/fragment_scorers.xml" value="0.2653985507246377" />
+        <entry key="..\:/Projects/less/football/scorers/src/main/res/layout/scorer_cell.xml" value="0.2653985507246377" />
+        <entry key="..\:/Projects/less/football/world/src/main/res/layout/fragment_world.xml" value="0.2653985507246377" />
+        <entry key="..\:/Projects/less/football/world/src/main/res/layout/world_cell.xml" value="0.2653985507246377" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

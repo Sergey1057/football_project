@@ -8,3 +8,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "football"
 include ':app'
+include ':core'
+include ':core:core_api'
+include ':core:core_impl'
+include ':main'
+include ':home'
+include ':scorers'
+include ':world'

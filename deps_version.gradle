@@ -1,0 +1,25 @@
+ext {
+
+    daggerVersion = '2.40.1'
+
+
+    dagger = "com.google.dagger:dagger:$daggerVersion"
+    daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+    сonverter_gson =  "com.squareup.retrofit2:converter-gson:2.9.0"
+    gson = "com.google.code.gson:gson:2.8.7"
+
+    // Retrofit
+    retrofitVersion = '2.9.0'
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    retrofitRxJava = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    retrofitAdapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    // Okhttp
+    okhttpVersion = '4.9.0'
+    okhttp = [
+            "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
+            "com.squareup.okhttp3:okhttp:$okhttpVersion",
+            "com.squareup.okhttp3:okhttp-urlconnection:$okhttpVersion"
+    ]
+}
