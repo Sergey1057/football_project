@@ -12,10 +12,6 @@ import javax.inject.Singleton
 @Module
 interface HomeModule {
 
-//    @Binds
-//    @Singleton
-//    fun bindsCache(memoryCache: HabitsMemoryCacheImpl): HabitsMemoryCache
-
     @Binds
     fun bindsHomeViewModelFactory(homeViewModelFactory: HomeViewModelFactory): ViewModelProvider.Factory
 

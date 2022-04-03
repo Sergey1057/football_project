@@ -10,10 +10,9 @@ import ru.sergey1057.scorers.models.ScorerModel
 
 
 class ScorersAdapter(
-    // private val specificationsList: List<TeamModel>
 ) : RecyclerView.Adapter<ScorersAdapter.TeamViewHolder>() {
 
-    var specificationsList: MutableList<ScorerModel> = mutableListOf()
+    var scorersList: MutableList<ScorerModel> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamViewHolder =
         TeamViewHolder(
@@ -21,11 +20,11 @@ class ScorersAdapter(
         )
 
     override fun onBindViewHolder(holder: TeamViewHolder, position: Int) {
-        holder.bind(specificationsList[position])
+        holder.bind(scorersList[position])
     }
 
     override fun getItemCount(): Int =
-        specificationsList.size
+        scorersList.size
 
     class TeamViewHolder(
         itemView: View
@@ -34,14 +33,12 @@ class ScorersAdapter(
         private val scorerPosition: TextView = itemView.findViewById(R.id.scorer_position)
         private val scorerName: TextView = itemView.findViewById(R.id.scorer_name)
         private val scorerTeam: TextView = itemView.findViewById(R.id.scorer_team)
-       // private val scorerCountry: TextView = itemView.findViewById(R.id.scorer_nationality)
         private val scorerGoals: TextView = itemView.findViewById(R.id.scorer_goals)
 
         fun bind(scorerModel: ScorerModel) {
             scorerPosition.text = scorerModel.scorerPosition
             scorerName.text = scorerModel.scorerName
             scorerTeam.text = scorerModel.scorerTeam
-          //  scorerCountry.text = scorerModel.scorerCountry
             scorerGoals.text = scorerModel.scorerGoals
         }
     }

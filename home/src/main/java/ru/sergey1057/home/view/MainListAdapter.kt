@@ -8,9 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.sergey1057.home.R
 import ru.sergey1057.home.models.TeamModel
 
-class MainHabitListAdapter(
-   // private val specificationsList: List<TeamModel>
-) : RecyclerView.Adapter<MainHabitListAdapter.TeamViewHolder>() {
+class MainListAdapter(
+) : RecyclerView.Adapter<MainListAdapter.TeamViewHolder>() {
 
     var specificationsList: MutableList<TeamModel> = mutableListOf()
 

@@ -7,7 +7,6 @@ import io.reactivex.Single
 
 interface WebApi {
 
-  //  @GET("competitions/2019/standings")
     @GET("competitions/PL/standings")
     fun getPacket(@Header("X-Auth-Token") token: String = "b6d85daeac7547729536242bed22459a"): Single<Packet>
 }

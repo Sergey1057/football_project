@@ -12,8 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import ru.sergey1057.core_api.mediator.AppWithFacade
 import ru.sergey1057.home.di.HomeComponent
-import ru.sergey1057.home.models.TeamModel
-import ru.sergey1057.home.view.MainHabitListAdapter
+import ru.sergey1057.home.view.MainListAdapter
 import ru.sergey1057.home.viewmodel.HomeViewModel
 import ru.sergey1057.home.viewmodel.ServerError
 import ru.sergey1057.home.viewmodel.Success
@@ -27,13 +26,7 @@ class HomeFragment : Fragment() {
         fun newInstance() = HomeFragment()
     }
 
-    private val habitsListAdapter = MainHabitListAdapter()
-//        mutableListOf(
-//            TeamModel("dsfsdf", "dsfsdfsdfs"),
-//            TeamModel("dsfsdf1", "dsfsdfsdfs1"),
-//            TeamModel("dsfsdf2", "dsfsdfsdfs2"),
-//        )
-//    )
+    private val mainListAdapter = MainListAdapter()
 
     private lateinit var viewModel: HomeViewModel
 
@@ -61,8 +54,8 @@ class HomeFragment : Fragment() {
                 result ->
             when (result) {
                 is Success -> {
-                    habitsListAdapter.specificationsList.addAll(result.teamModels)
-                    habitsListAdapter.notifyDataSetChanged()
+                    mainListAdapter.specificationsList.addAll(result.teamModels)
+                    mainListAdapter.notifyDataSetChanged()
                 }
                 is Error -> Toast.makeText(context, result.message, Toast.LENGTH_LONG).show()
                 ServerError -> Snackbar.make(view, "Network error", 1000).show()
@@ -71,23 +64,8 @@ class HomeFragment : Fragment() {
 
         val habitsListRecycler: RecyclerView = view.findViewById(R.id.habitsListRecycler)
 
-        habitsListRecycler.adapter = habitsListAdapter
+        habitsListRecycler.adapter = mainListAdapter
 
-//        weekBar.setSelectedDay(viewModel.getDayOfWeek() - 1)
-//        initRecycler()
-//        viewModel.todayHabits.observe(this, Observer {
-//            habitsListAdapter.items.addAll(it)
-//            habitsListAdapter.notifyDataSetChanged()
-//        })
-//        viewModel.getHabits(1)
-//        fab.setOnClickListener{
-//            viewModel.openCreateHabitScreen(requireContext())
-//        }
     }
 
-    private fun initRecycler() {
-//        habitsListRecycler.addItemDecoration(MainHabitsItemDecorator())
-//        habitsListRecycler.adapter = habitsListAdapter
-//        habitsListRecycler.itemAnimator = SlideInLeftAnimator()
-    }
 }

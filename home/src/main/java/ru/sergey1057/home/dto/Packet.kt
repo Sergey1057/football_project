@@ -4,9 +4,6 @@ import com.google.gson.annotations.SerializedName
 
 data class Packet (
 
-//    @SerializedName("filters")
-//    val filters: Filters,
-
     @SerializedName("competition")
     val competition: Competition,
 

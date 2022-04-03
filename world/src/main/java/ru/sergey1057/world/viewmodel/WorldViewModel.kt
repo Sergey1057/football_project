@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 class WorldViewModel
 constructor(
-    private val webApi: WebApi
+    webApi: WebApi
 ) : ViewModel() {
     private val cd = CompositeDisposable()
 

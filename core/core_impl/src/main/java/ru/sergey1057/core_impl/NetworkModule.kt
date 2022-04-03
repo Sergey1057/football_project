@@ -42,7 +42,7 @@ class NetworkModule {
             .readTimeout(
                 10,
                 TimeUnit.SECONDS
-            ) //                .addNetworkInterceptor(new ChuckInterceptor(context))
+            )
             .addInterceptor(logging)
             .build()
     }

@@ -11,10 +11,6 @@ import ru.sergey1057.scorers.webApi.WebApi
 @Module
 interface ScorersModule {
 
-//    @Binds
-//    @Singleton
-//    fun bindsCache(memoryCache: HabitsMemoryCacheImpl): HabitsMemoryCache
-
     @Binds
     fun bindsScorersViewModelFactory(scorersViewModelFactory: ScorersViewModelFactory): ViewModelProvider.Factory
 

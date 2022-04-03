@@ -8,36 +8,16 @@ data class Player(
     val id: Integer,
 
     @SerializedName("name")
-    val  name: String,
+    val name: String,
     @SerializedName("firstName")
 
-val firstName: String ,
+    val firstName: String,
 
-@SerializedName("lastName")
+    @SerializedName("lastName")
 
-val lastName: String ,
+    val lastName: String,
 
-//@SerializedName("dateOfBirth")
-//
-//val String dateOfBirth,
-//
-//@SerializedName("countryOfBirth")
-//
-//val String countryOfBirth,
+    @SerializedName("nationality")
 
-@SerializedName("nationality")
-
-val nationality: String ,
-
-//@SerializedName("position")
-
-//val String position,
-//
-//@SerializedName("shirtNumber")
-//
-//val Integer shirtNumber,
-//
-//@SerializedName("lastUpdated")
-//
-//val String lastUpdated
+    val nationality: String,
 )

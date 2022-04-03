@@ -54,7 +54,7 @@ class ScorersFragment : Fragment() {
                 result ->
             when (result) {
                 is Success -> {
-                    scorersAdapter.specificationsList.addAll(result.scorers)
+                    scorersAdapter.scorersList.addAll(result.scorers)
                     scorersAdapter.notifyDataSetChanged()
                 }
                 is Error -> Toast.makeText(context, result.message, Toast.LENGTH_LONG).show()
@@ -62,9 +62,9 @@ class ScorersFragment : Fragment() {
             }
         }
 
-        val habitsListRecycler: RecyclerView = view.findViewById(R.id.scorersRecycler)
+        val scorersListRecycler: RecyclerView = view.findViewById(R.id.scorersRecycler)
 
-        habitsListRecycler.adapter = scorersAdapter
+        scorersListRecycler.adapter = scorersAdapter
 
     }
 
